@@ -6,11 +6,12 @@ get_header();
 ?>
 
 <?php
-// 
+
 $diaporama = get_field('diaporama');
 $etude = get_field('etude');
 $owner = get_field('nghi_stephan');
 $tissus = get_field('tissus_et_artisanat');
+
 ?>
 
 <?php
@@ -18,7 +19,7 @@ if ($diaporama) { ?>
     <div id="diaporama">
         <p><?php echo $diaporama['titre_dia']; ?></p>
         <img src="<?php echo esc_url($diaporama['img_dia']['url']); ?>" alt="<?php echo esc_attr($diaporama['img_dia']['alt']); ?>" />
-      <p><?php echo $diaporama['intro_dia']; ?></p>
+        <p><?php echo $diaporama['intro_dia']; ?></p>
     </div>
 <?php } ?>
 
@@ -28,6 +29,11 @@ if ($etude) {  ?>
         <p><?php echo $etude['titre_etude']; ?></p>
         <p><?php echo $etude['ss-titre_etude']; ?></p>
         <p><?php echo $etude['wysiwig_etude']; ?></p>
+        <?php
+            $repEtude = $etude['repeater_etude'];
+            foreach ($repEtude as $key => $value) { ?>
+                <p><?php echo $value['texte_rep']; ?></p>
+            <?php } ?>
     </div>
 <?php } ?>
 
