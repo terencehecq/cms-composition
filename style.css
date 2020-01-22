@@ -5,3 +5,163 @@ Description: Exercice Thème CMS
 Version: 1.0
 */
 
+html, body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav.navbar{
+    background-color: #000;
+}
+
+.navbar a{
+    color:#fff;
+}
+
+.bg_noir{
+    position: absolute;
+    z-index: -1;
+    background-color: #000;
+    width:100%;
+    height:60vh;
+}
+
+
+
+/* ----- Blog ----- */
+
+.blog_posts h2{
+    position: relative;
+    z-index: 100;
+    color:white;
+    padding: 15vh 0;
+    font-weight: lighter;
+    font-size: 1.7rem;
+}
+
+.blog_posts h2::before{
+    content: '';
+    width: 30%;
+    border-bottom: solid 1px #fff;
+    position: absolute;
+    top:50%;
+    left: -31%;
+    z-index: 1;
+}
+
+.blog_posts article a{
+    color: black;
+    text-decoration: none;
+}
+
+.blog_posts a:hover{
+    color: #666;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.blog_posts article{
+    margin-bottom: 5vh;
+}
+
+.blog_posts .article_image{
+    overflow: hidden;
+}
+
+.blog_posts article:hover img{
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+
+.blog_posts h3{
+    margin: 15px 0;
+}
+
+.blog_posts .article_date{
+    position: relative;
+    color: #888;
+    font-size: 0.9rem;
+    padding-left: 20px;
+}
+
+.blog_posts .article_date:before{
+    content: '';
+    width: 14px;
+    border-bottom: solid 1px #888;
+    position: absolute;
+    top:50%;
+    left: 0;
+    z-index: 1;
+}
+
+.blog_pagination{
+    margin-bottom: 5vh;;
+}
+
+.blog_pagination a{
+    color:black;
+}
+
+.blog_pagination a:hover{
+    color:#888;
+}
+
+
+/* ----- Footer ----- */
+
+footer .footer_top{
+    border-bottom: 1px solid #bbb;
+}
+
+footer .image_rounded{
+    overflow: hidden;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+}
+footer .image_rounded img{
+    height:120px;
+}
+
+footer .footer_article_link p{
+    font-weight: lighter;
+    font-size: 1.3rem;
+}
+
+footer .footer_article_link a{
+    color: black;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+footer .footer_details div{
+    width:30%;
+}
+
+footer .footer_horaires{
+    background-color: black;
+    color:white;
+    font-size: 0.9rem;
+}
+
+footer.footer_social{
+    position: relative;
+    text-align:right;
+}
+
+footer .footer_social a{
+    display: inline-block;
+    text-align:center;
+    width:25px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+footer .footer_social p{
+    position: absolute;
+    font-size: 0.8rem;
+    text-align: right;
+    bottom: 0;
+    right: 0;
+}

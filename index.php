@@ -1,48 +1,43 @@
 <?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package WordPress
- * @subpackage Twenty_Nineteen
- * @since 1.0.0
+/*
+	* Template name : blog
  */
 
 get_header();
 ?>
 
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main col-10 d-flex flex-wrap m-auto p-0">
+	<div class="bg_noir"></div>
+
+	<section class="container blog_posts col-10">
+		<h2>Architecte d'intérieur en action</h2>
+		<main id="main" class="site-main d-flex flex-wrap m-auto p-0">
 
 		<?php
-		if ( have_posts() ) {
-
-			// Load posts loop.
-			while ( have_posts() ) {
-				the_post();
-				get_template_part( 'template-parts/content/content' );
-			}
-
-			// Previous/next page navigation.
-			twentynineteen_the_posts_navigation();
-
-		} else {
-
-			// If no content, include the "No posts found" template.
-			get_template_part( 'template-parts/content/content', 'none' );
-
-		}
+		if ( have_posts() ) : while ( have_posts() ) : the_post();
 		?>
 
-		</main><!-- .site-main -->
-	</section><!-- .content-area -->
+			<article id="post-<?php the_ID(); ?>" class="col-6">
+				<a href="<?php the_permalink() ?>">
+					<div class="article_image">
+						<img src="<?php the_field('principal_image'); ?>" class="img-fluid d-block">
+					</div>
+					
+					<h3><?php the_title() ?></h3>
+				</a>
+				<p class="article_date"><?php echo get_the_date(); ?></p>
+			</article>
+
+
+		<?php endwhile; endif; ?>
+		</main>
+
+		<div class="blog_pagination text-center">
+			<?php next_posts_link(); ?>
+			<?php previous_posts_link(); ?>
+		</div>
+	</section>
 
 <?php
 get_footer();
+?>

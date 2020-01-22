@@ -1,57 +1,50 @@
 <?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package WordPress
- * @subpackage Twenty_Nineteen
- * @since 1.0.0
+/*
+	* Template name : Footer
  */
-
+	wp_footer();
 ?>
 
-	</div><!-- #content -->
+<footer class="col-12">
+	<div class="footer_top d-flex col-10 mx-auto py-5">
+		<div class="footer_article_link col-8 d-flex align-items-center">
+			<div class="image_rounded mr-5">
+				<img src="<?php bloginfo('template_url'); ?>/img/1500x1250_02.jpg">
+			</div>
+			<div>
+				<p>Lorem ipsum dolor sit amet coucou petite perruche.</p>
+				<a href="#">Tissus & habillage -></a>
+			</div>
 
-	<footer id="colophon" class="site-footer">
-		<?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
-		<div class="site-info">
-			<?php $blog_info = get_bloginfo( 'name' ); ?>
-			<?php if ( ! empty( $blog_info ) ) : ?>
-				<a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>,
-			<?php endif; ?>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentynineteen' ) ); ?>" class="imprint">
-				<?php
-				/* translators: %s: WordPress. */
-				printf( __( 'Proudly powered by %s.', 'twentynineteen' ), 'WordPress' );
-				?>
-			</a>
-			<?php
-			if ( function_exists( 'the_privacy_policy_link' ) ) {
-				the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
-			}
-			?>
-			<?php if ( has_nav_menu( 'footer' ) ) : ?>
-				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
-					<?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'footer',
-							'menu_class'     => 'footer-menu',
-							'depth'          => 1,
-						)
-					);
-					?>
-				</nav><!-- .footer-navigation -->
-			<?php endif; ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+		</div>
+		<div class="footer_horaires col-4 py-4 px-5 d-flex flex-column">
+			<p><b>Horaires</b></p>
+			<p>Lundi > Dimanche : (Fermé le mardi) 10h > 18h30</p>
+		</div>
+	</div>
+	<div class="footer_details d-flex col-10 mx-auto mt-5 justify-content-between">
+		<div>
+			<h3>Rendez-nous visite !</h3>
+			<a href="#">Google maps -></a>
+		</div>
+		<div>
+			<p>Route de Hamoir, 87 - 4500 Huy</p>
+			<p>info@meublescomposition.be</p>
+			<p>+32 (0)85 32 12 56</p>
+		</div>
+		<div class="footer_social">
+			<a href="#">F</a>
+			<a href="#">I</a>
+			<a href="#">P</a>
+			<p>© Composition 2020 - BeCode</p>
+		</div>
+	</div>
 
-</div><!-- #page -->
+</footer>
 
-<?php wp_footer(); ?>
 
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
