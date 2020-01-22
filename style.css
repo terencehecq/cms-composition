@@ -4,3 +4,24 @@ Author: Gaby P. Kevin L. Micky C. Térence H.
 Description: Exercice Thème CMS
 Version: 1.0
 */
+
+#diaporama {
+  position: relative;
+}
+
+.diapo-bg {
+  background-color: black;
+  height: 80vh;
+  width: 80vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.diapo-title {
+  margin: 7rem auto;
+}
+
+#etude {
+  margin: 7rem auto;
+}
