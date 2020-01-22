@@ -6,7 +6,7 @@ Version: 1.0
 */
 
 html, body{
-    margin: 0;
+    /* margin: 0; */
     box-sizing: border-box;
 }
 
@@ -128,7 +128,7 @@ footer .footer_article_link p{
     font-size: 1.3rem;
 }
 
-footer .footer_article_link a{
+footer .footer_article_link a, footer .footer_details a{
     color: black;
     font-weight: bold;
     font-size: 0.9rem;

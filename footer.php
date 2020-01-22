@@ -2,13 +2,13 @@
 /*
 	* Template name : Footer
  */
-	wp_footer();
+	// wp_footer();
 ?>
 
 <footer class="col-12">
 	<div class="footer_top d-flex col-10 mx-auto py-5">
 		<div class="footer_article_link col-8 d-flex align-items-center">
-			<div class="image_rounded mr-5">
+			<div class="image_rounded mr-3">
 				<img src="<?php bloginfo('template_url'); ?>/img/1500x1250_02.jpg">
 			</div>
 			<div>
