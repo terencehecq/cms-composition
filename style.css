@@ -5,6 +5,83 @@ Description: Exercice Thème CMS
 Version: 1.0
 */
 
+html,
+body {
+  /* margin: 0; */
+  box-sizing: border-box;
+}
+
+/* ----- Nav ----- */
+
+.navbar-custom {
+  background-color: black;
+}
+.nav-container {
+  padding: 0 !important;
+}
+
+/* ----- Footer ----- */
+
+footer .footer_top {
+  border-bottom: 1px solid #bbb;
+}
+
+footer .image_rounded {
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+footer .image_rounded img {
+  height: 120px;
+}
+
+footer .footer_article_link p {
+  font-weight: lighter;
+  font-size: 1.3rem;
+}
+
+footer .footer_article_link a,
+footer .footer_details a {
+  color: black;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+footer .footer_details div {
+  width: 30%;
+}
+
+footer .footer_horaires {
+  background-color: black;
+  color: white;
+  font-size: 0.9rem;
+}
+
+footer.footer_social {
+  position: relative;
+  text-align: right;
+}
+
+footer .footer_social a {
+  display: inline-block;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+footer .footer_social p {
+  position: absolute;
+  font-size: 0.8rem;
+  text-align: right;
+  bottom: 0;
+  right: 0;
+}
+
+/* ----- Archi ----- */
+
 #diaporama {
   position: relative;
 }
@@ -12,7 +89,7 @@ Version: 1.0
 .diapo-bg {
   background-color: black;
   height: 80vh;
-  width: 80vw;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
