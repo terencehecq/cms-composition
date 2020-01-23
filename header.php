@@ -15,7 +15,7 @@
 <body>
 <div class="container nav-container">
         <nav class="navbar navbar-expand-lg px-5 d-flex navbar-dark navbar-custom">
-            <a class="navbar-brand" href="#">Composition</a>
+            <a class="navbar-brand text-uppercase" href="#">Composition</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,22 +23,22 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/wp-challenge">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-uppercase" href="/wp-challenge">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Magasin</a>
+                        <a class="nav-link text-uppercase" href="#">Magasin</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/wp-challenge/archi">Architecte d'intérieur</a>
+                        <a class="nav-link text-uppercase" href="/wp-challenge/archi">Architecte d'intérieur</a>
 				</li>
 				<li class="nav-item">
-                    <a class="nav-link" href="/wp-challenge/about">A propos</a>
+                    <a class="nav-link text-uppercase" href="/wp-challenge/about">A propos</a>
 				</li>
 				<li class="nav-item">
-                    <a class="nav-link" href="/wp-challenge/blog">Blog</a>
+                    <a class="nav-link text-uppercase" href="/wp-challenge/blog">Blog</a>
 				</li>
 				<li class="nav-item">
-                    <a class="nav-link" href="/wp-challenge/contact">Contact</a>
+                    <a class="nav-link text-uppercase" href="/wp-challenge/contact">Contact</a>
 				</li>
             </div>
         </nav>

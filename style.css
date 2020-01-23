@@ -16,8 +16,14 @@ body {
 .navbar-custom {
   background-color: black;
 }
+
 .nav-container {
   padding: 0 !important;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 0.6rem;
 }
 
 /* ----- Footer ----- */
@@ -90,6 +96,7 @@ footer .footer_social p {
   background-color: black;
   height: 80vh;
   width: 100%;
+  z-index: -2;
   position: absolute;
   top: 0;
   left: 0;
@@ -100,5 +107,43 @@ footer .footer_social p {
 }
 
 #etude {
-  margin: 7rem auto;
+  margin-top: 7rem;
+  position: relative;
+}
+
+#etude .repeater {
+  background-color: black;
+  color: white;
+}
+
+#etude .repeater p:first-of-type {
+  margin-left: -3rem;
+}
+
+.etude-bg {
+  background-color: black;
+  height: 100%;
+  width: 50%;
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.ns-txt,
+.tissus-txt {
+  font-size: 0.8rem !important;
+}
+
+.tissus-left {
+  float: left;
+  width: 50%;
+  margin-top: 1rem;
+  padding-right: 0.2rem;
+}
+.tissus-right {
+  float: right;
+  width: 50%;
+  margin-top: 1rem;
+  padding-left: 0.2rem;
 }
