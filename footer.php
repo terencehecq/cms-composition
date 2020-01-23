@@ -13,7 +13,7 @@
 			</div>
 			<div>
 				<p>Lorem ipsum dolor sit amet coucou petite perruche.</p>
-				<a href="#">Tissus & habillage -></a>
+				<a href="#">Tissus & habillage</a>
 			</div>
 
 		</div>
@@ -25,7 +25,7 @@
 	<div class="footer_details d-flex col-10 mx-auto mt-5 justify-content-between">
 		<div>
 			<h3>Rendez-nous visite !</h3>
-			<a href="#">Google maps -></a>
+			<a href="#">Google maps</a>
 		</div>
 		<div>
 			<p>Route de Hamoir, 87 - 4500 Huy</p>
@@ -33,9 +33,9 @@
 			<p>+32 (0)85 32 12 56</p>
 		</div>
 		<div class="footer_social">
-			<a href="#">F</a>
-			<a href="#">I</a>
-			<a href="#">P</a>
+			<a href="#">Fb</a>
+			<a href="#">Ig</a>
+			<a href="#">Pi</a>
 			<p>© Composition 2020 - BeCode</p>
 		</div>
 	</div>

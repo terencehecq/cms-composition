@@ -6,51 +6,47 @@
 
 get_header();
 ?>
+	<div class="bg_noir"></div>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
-
-
+	<section class="container blog_single col-8">
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<div class="container m-auto p-0">
-				<div class="article_infos">
-					<a href="/wp-challenge/blog/">Retour</a>
-					<p><?php the_date(); ?></p>
-				</div>
+		<div class="back_to_list d-flex justify-content-between col-12">
+			<a href="/wp-challenge/blog/">Retour</a>
+			<p><?php the_date(); ?></p>
+		</div>
 
-				<h2><?php the_title(); ?></h2>
-				<img src="<?php the_field('principal_image'); ?>" class="img-fluid">
-				<p><?php the_field('intro');?></p>
-
-				<?php
-					if( have_rows('content_2') ):
-
-						while ( have_rows('content_2') ) : the_row();
-
-						if( get_row_layout() == 'content' ): $content2 = the_sub_field('wysiwyg');
-						elseif( get_row_layout() == 'subtitle' ): $subtitle = get_sub_field('subtitle');
-						elseif( get_row_layout() == 'image' ): $image = get_sub_field('image_2');
-				?>
-
-				<h3><?php echo $subtitle ?></h3>
-				<img src="<?php echo $image ?>">
-				<p><?php echo $content2; ?></p>
-
-				<?php	
-						endif;
-						endwhile; 
-					endif;
-				?>	
+		<article class="article_single col-12">
 
 
-			</div>
+			<h1><?php the_title(); ?></h1>
+			<img src="<?php the_field('principal_image'); ?>" class="img-fluid">
+			<p><?php the_field('intro');?></p>
 
-<?php
-			endwhile; // End of the loop.
+			<?php
+				if( have_rows('content_2') ): while ( have_rows('content_2') ) : the_row();
+
+					if( get_row_layout() == 'content' ): $content2 = the_sub_field('wysiwyg');
+					elseif( get_row_layout() == 'subtitle' ): $subtitle = get_sub_field('subtitle');
+					elseif( get_row_layout() == 'image' ): $image = get_sub_field('image_2');
 			?>
 
-		</main><!-- #main -->
+			<h2><?php echo $subtitle ?></h2>
+			<img src="<?php echo $image ?>" class="img-fluid">
+			<p><?php echo $content2; ?></p>
+
+			<?php	
+						endif;
+					endwhile; 
+				endif;
+			?>	
+
+
+		<?php endwhile; ?>
+
+		<a href="/wp-challenge/blog/" class="back_bottom">Retour</a>
+
+		</article>
 	</section><!-- #primary -->
 
 <?php

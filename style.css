@@ -16,6 +16,15 @@ nav.navbar{
 
 .navbar a{
     color:#fff;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.navbar a:hover{
+    color: #fff;
+    border-color: white;
 }
 
 .bg_noir{
@@ -25,6 +34,7 @@ nav.navbar{
     width:100%;
     height:60vh;
 }
+
 
 
 
@@ -107,6 +117,65 @@ nav.navbar{
 }
 
 
+
+
+/* ----- Single article ----- */
+
+.blog_single .back_to_list{
+    margin: 10vh 0 3vh;
+    color: #ddd;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.blog_single .back_to_list a{
+    color: #ddd;
+}
+
+.blog_single article{
+    margin-bottom: 5vh;
+}
+
+.blog_single article h1{
+    color: white;
+    margin-bottom: 5vh;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.blog_single article h2{
+    font-size: 1.4rem;
+    color: #666;
+    font-weight: bold;
+    margin: 3vh 0;
+}
+
+.blog_single article p{
+    font-size: 0.9rem;
+    color: #666;
+    margin: 2vh 0;
+}
+
+.blog_single article img{
+    margin: 2vh 0;
+}
+
+.blog_single a.back_bottom{
+    color: black;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.blog_single a.back_bottom::before{
+    content: url(img/pictos/fleche-droite.svg);
+    display: inline-block;
+    transform: rotate(180deg);
+    margin-right:10px;
+    vertical-align: middle;
+}
+
+
+
 /* ----- Footer ----- */
 
 footer .footer_top{
@@ -132,6 +201,13 @@ footer .footer_article_link a, footer .footer_details a{
     color: black;
     font-weight: bold;
     font-size: 0.9rem;
+}
+
+footer .footer_article_link a::after, footer .footer_details a::after{
+    content: url(img/pictos/fleche-droite.svg);
+    display: inline-block;
+    margin-left:5px;
+    vertical-align: middle;
 }
 
 footer .footer_details div{

@@ -25,7 +25,7 @@
 		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="/wp-challenge">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="/wp-challenge">Home</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link disabled" href="#">Magasin</a>
