@@ -37,7 +37,7 @@ if ($etude) {  ?>
                 <p><?php echo $etude['ss-titre_etude']; ?></p>
                 <p><?php echo $etude['wysiwig_etude']; ?></p>
             </div>
-            <div class="col-md-5 offset-md-1 repeater py-5 pl-5">
+            <div class="col-md-5 offset-md-1 repeater py-5">
                 <?php
                     $repEtude = $etude['repeater_etude'];
                     foreach ($repEtude as $key => $value) { ?>

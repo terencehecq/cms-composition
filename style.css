@@ -135,6 +135,11 @@ footer .footer_social p {
   font-size: 0.8rem !important;
 }
 
+.ns-txt p {
+  margin-left: -3rem;
+  margin-right: 10rem;
+}
+
 .tissus-left {
   float: left;
   width: 50%;
@@ -151,5 +156,14 @@ footer .footer_social p {
 @media screen and (max-width: 600px) {
   .etude-bg {
     background-color: transparent;
+  }
+
+  #etude .repeater p:first-of-type {
+    margin-left: auto;
+  }
+
+  .ns-txt p {
+    margin-left: auto;
+    margin-right: 1rem;
   }
 }
