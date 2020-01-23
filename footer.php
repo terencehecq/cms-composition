@@ -3,7 +3,7 @@
     // wp_footer();
 ?>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
 
     <footer class="col-12">

@@ -147,3 +147,9 @@ footer .footer_social p {
   margin-top: 1rem;
   padding-left: 0.2rem;
 }
+
+@media screen and (max-width: 600px) {
+  .etude-bg {
+    background-color: transparent;
+  }
+}

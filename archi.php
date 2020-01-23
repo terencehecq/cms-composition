@@ -15,7 +15,7 @@ $tissus = get_field('tissus_et_artisanat');
 
 <?php
 if ($diaporama) { ?>
-    <section id="diaporama" class="container">
+    <section id="diaporama" class="container-fluid">
         <div class="diapo-bg"></div>
         <div class="row">
             <div class="col-md-8 offset-md-1">
@@ -29,7 +29,7 @@ if ($diaporama) { ?>
 
 <?php
 if ($etude) {  ?>
-    <section id="etude" class="container">
+    <section id="etude" class="container-fluid">
         <div class="etude-bg"></div>
         <div class="row">
             <div class="col-md-5 offset-md-1">
@@ -50,7 +50,7 @@ if ($etude) {  ?>
 
 <?php
 if ($owner) {  ?>
-    <section id="owner" class="container">
+    <section id="owner" class="container-fluid">
         <div class="row">
             <div class="col-md-5 offset-md-1 pr-0">
                 <img class="img-fluid ns-img" src="<?php echo esc_url($owner['img_ns']['url']); ?>"/>
