@@ -166,4 +166,17 @@ footer .footer_social p {
     margin-left: auto;
     margin-right: 1rem;
   }
+
+  .tissus-left {
+    float: none;
+    width: 100%;
+    margin-top: 1rem;
+    padding-right: 0.2rem;
+  }
+  .tissus-right {
+    float: none;
+    width: 100%;
+    margin-top: 1rem;
+    padding-left: 0.2rem;
+  }
 }
