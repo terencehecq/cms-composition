@@ -4,3 +4,47 @@ Author: Gaby P. Kevin L. Micky C. Térence H.
 Description: Exercice Thème CMS
 Version: 1.0
 */
+
+.titre1{
+
+    z-index: 800;
+    position: relative;
+    top:-50px;
+    box-shadow: 8px 8px 12px #aaa; 
+    
+}
+
+.titre2{
+
+    background-color: black;
+    position: relative;
+    top:-50px;
+    box-shadow: 8px 8px 12px #aaa;
+    
+}
+.banner{
+
+    position: absolute;
+}
+.Introduction{
+    display: grid;
+    grid-template-areas: 
+        "hg d"
+        "bg d";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 65vh 65vh;
+    padding-top:900px;
+}
+.img_test img{
+
+    grid-area: d;
+    height: 120vh;
+}
+.txt{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.texteETtitre{
+    
+    grid-area: hg;
+}
