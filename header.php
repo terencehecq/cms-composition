@@ -16,9 +16,11 @@
 
 <body>
 
-	<nav class="navbar navbar-expand-lg px-5 d-flex">
-		<a class="navbar-brand" href="#">Navbar</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<nav class="navbar navbar-expand-lg px-md-5 d-flex">
+		<a class="navbar-brand" href="/wp-challenge">
+			<img src="<?php bloginfo('template_url'); ?>/img/pictos/logo-full.svg" style="filter: invert(1);">
+		</a>
+		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
