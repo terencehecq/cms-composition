@@ -34,7 +34,12 @@ $imageIntro = get_field("image_intro1");
 </section>
 
 <section class="Introduction"><!--attention changer couleur après-->
-    <div class="txtETtitre bg-dark">
+
+    <div class="txtETtitre">
+
+    <div class="wy1" id="wy1">
+        <?php the_field('wysiwyg1'); ?>
+    </div>
         <div class="titre">
             <?php the_field('titre_intro1'); ?>
         </div>
@@ -46,6 +51,11 @@ $imageIntro = get_field("image_intro1");
     <div class="img_test">
         <img src="<?php echo $imageIntro['url']; ?>">
     </div>
+    <section class="milieu">
+        <div class="milieu1">
+            <?php the_field('Texte_milieu1'); ?>
+        </div>
+    </section>
 </section>
 <!--Pour aller chercher le footer--> 
 <?php get_footer(); ?> 
